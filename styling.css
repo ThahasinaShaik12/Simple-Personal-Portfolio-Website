@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: purple;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1470af;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: neue-haas-grotesk-display;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  text-align: end;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: purple;
+}
+
+.image-container img {
+  width: 250px;
+  height: 350px;
+  border-radius: 3%;
+}
+
+.text-container {
+  margin-left: 30px;
+  font-family: neue-haas-grotesk-display;
+  font-size: 32.6112px;
+  color: #fff;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid black;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: white;
+  color: #1470af;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;
+}
+.resume {
+  position: relative;
+  padding-left: 50px;
+}
+.contact-header {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.social-icons {
+  list-style-type: none;
+  padding-left: 10;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
