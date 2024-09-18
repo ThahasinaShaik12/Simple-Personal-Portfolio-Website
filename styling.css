@@ -52,6 +52,11 @@ nav ul li a {
   color: #fff;
 }
 
+.resume {
+  position: relative;
+  padding-left: 50px;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -87,16 +92,44 @@ nav ul li a {
   margin-bottom: 10px;
 }
 
-.resume .resume-item ul {
-  padding-left: 20px;
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
 }
 
-.resume .resume-item ul li {
-  padding-bottom: 10px;
+.skills ul li {
+  background: linear-gradient(145deg, #e0e0e0, #f0f0f0);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1470af;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
-.resume .resume-item:last-child {
-  padding-bottom: 0;
+.skills ul li:hover {
+  background: #1470af;
+  color: white;
+  transform: scale(1.1);
+}
+
+.skills ul li::before {
+  content: "★";
+  color: #1470af;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.skills ul li:hover::before {
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .resume .resume-item::before {
@@ -110,10 +143,7 @@ nav ul li a {
   background: #fff;
   border: 2px solid #0563bb;
 }
-.resume {
-  position: relative;
-  padding-left: 50px;
-}
+
 .contact-header {
   font-size: 36px;
   margin-bottom: 20px;
